@@ -1,0 +1,80 @@
+.AdminLogin {
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.back{
+   
+    background-color:rgb(70, 99, 248) ;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(209, 203, 203);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.back:hover{
+    background-color: rgb(245, 53, 53);
+}
+
+form {
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    border-radius: 15px;
+    font-family: 'poppins';
+    color: white;
+    padding: 45px;
+    background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+form input {
+ padding: 15px;
+ margin-bottom: 25px;
+ background: transparent;
+ color: white;
+ font-size: 20px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button {
+    width: 200px;
+    padding: 15px;
+    align-self: center;
+    font-size: 20px;
+    background-color:rgb(38, 73, 248) ;
+    font-family: 'poppins';
+    color: rgb(209, 203, 203);
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover{
+    width: 240px;
+    background-color: rgb(215, 37, 37);
+    transition: 0.5s;
+}
+
+form h1 {
+    align-self: center;
+    margin-bottom: 25px;
+    color: rgb(209, 203, 203);
+
+
+}
+
+form h1:hover {
+    text-decoration: overline;
+}

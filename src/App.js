@@ -3,7 +3,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Home from './components/Home';
 import AdminLogin from './components/AdminLogin';
 import UserLogin from './components/UserLogin';
-import Navbar from './components/Navbar';
+
 import Adminportal from './components/Adminportal';
 import UserDashboard from './components/UserDashboard';
 
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
        <BrowserRouter >
          
-         <Navbar />
+     
         <Routes>
           <Route path='/' element={<Home />}/>   
           <Route path='/admin' element={<AdminLogin />} />

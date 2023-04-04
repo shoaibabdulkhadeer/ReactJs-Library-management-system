@@ -1,16 +1,17 @@
 import React from 'react'
+import '../styles/Adminnavbar.css'
+import { Link } from 'react-router-dom'
 
 const AdminNavbar = () => {
   return (
-    <div>
+    <div className='navbar'>
 
       <ul>
-        <li>Dashboard</li>
-        <li>User List</li>
-        <li></li>
-        <li></li>
-
-
+       <Link to="/admin/home"> <li>Home</li> </Link>  
+        <Link to="/admin/add-books"> <li>Add Books</li> </Link> 
+        <Link to="/admin/add-users">  <li>Add Users</li>  </Link>
+       <Link to="/admin/user-list">  <li>User-List</li> </Link>  
+       <Link to="/">  <li>Log Out</li> </Link>  
       </ul>
 
 

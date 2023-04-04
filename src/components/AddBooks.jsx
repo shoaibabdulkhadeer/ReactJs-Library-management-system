@@ -1,11 +1,11 @@
 import React from 'react'
 
 const AddBooks = () => {
-  return (
-    <div>
-        <h1>Add Books</h1>
+    return (
+        <div>
+            <h1>Add Books</h1>
         </div>
-  )
+    )
 }
 
 export default AddBooks

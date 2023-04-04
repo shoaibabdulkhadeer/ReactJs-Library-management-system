@@ -19,7 +19,7 @@ const Home = () => {
           <button class="button-92">Signin As ..?</button>          
           <div className='links'>
             <Link to="/admin"> <button className="button-85"> Admin Login </button></Link>
-            <Link to="/userlogin"> <button className="button-85" > User Login </button>    </Link>
+            <Link to="/userlogin"> <button className="button-85" > User Login </button>   </Link>
           </div>
 
         </div>

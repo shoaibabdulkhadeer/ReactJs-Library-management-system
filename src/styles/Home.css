@@ -156,6 +156,7 @@
   touch-action: manipulation;
   font-weight: bold;
   transition: 0.5s;
+  z-index: 10;
 }
 
 .button-85:hover{

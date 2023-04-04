@@ -4,6 +4,8 @@ import Home from './components/Home';
 import AdminLogin from './components/AdminLogin';
 import UserLogin from './components/UserLogin';
 import Navbar from './components/Navbar';
+import Adminportal from './components/Adminportal';
+import UserDashboard from './components/UserDashboard';
 
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>   
           <Route path='/admin' element={<AdminLogin />} />
-          <Route path='/userlogin' element={<UserLogin />} />      
+          <Route path='/userlogin' element={<UserLogin />} />     
+          <Route path='/userPortal' element= {<UserDashboard />} />
+          <Route path = '/admin/*' element={<Adminportal />} />
 
         </Routes>
 

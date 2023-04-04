@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../styles/Admin.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const AdminLogin = () => {
+
+ let AdminEmail = useRef(null)
+ let Adminpassword = useRef(null)
+
+let navigate= useNavigate()
+
+let submit = () => {
+  if(AdminEmail.current.value === "ak@gmail.com" && Adminpassword.current.value === "123456"){
+    navigate("/admin/home")
+  }else{
+    alert("Invalid Credentials")
+  }
+}
+
+
   return (
     <div className='AdminLogin'>
           
          <Link to="/"> <button className='back'> Back to Home </button> </Link> 
 
-        <form action=" "> 
+        <form action=" " onSubmit={submit}> 
          <h1>Admin Login</h1>
-         <input type="text" placeholder='Username' className='username' required/>
-         <input type="text" placeholder='Password' required/>
+
+         <input  ref={AdminEmail} type="text" placeholder='Email' className='username' required/>
+         <input  ref={Adminpassword} type="text" placeholder='Password' required/>
+
 
          <button>Login</button>
         </form>

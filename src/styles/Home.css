@@ -5,20 +5,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    min-height: 100vh;
+    
     /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    background-color: rgb(182, 182, 203);; */
+    background-color: rgb(182, 182, 203); */
 
-     background: url("../components/bggg.png") no-repeat center center fixed ;
-     
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-    
-    
+ 
     /* background-color: rgb(0, 0, 0); */
     
-  background-size: cover; 
+
     /* background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%); */
 }
 
@@ -65,15 +61,40 @@
 .Items {
     margin: 15px;
   
-    width: 500px;
+    width: 550px;
     display: flex;
-    height: 380px;
+    height: 500px;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+    border-radius: 10px;
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
+
+
+  }
+
+  .mariodiv {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+     border-radius: 15px;
+  }
+
+  .mariodiv:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+  }
+
+
+  .mariodiv h2 {
+    color: rgb(209, 203, 203);
+  font-size: 2rem;
+  }
+
 
 .title {
     font-family: 'poppins';
@@ -82,9 +103,9 @@
      font-weight: bold;
  width: 90%;
          padding: 25px;
-    
+     font-size: 35px;
    
- margin-bottom: 45px;
+ margin-bottom: 15px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     
 }
@@ -146,7 +167,8 @@
   color: rgb(255, 255, 255);
   background: #111;
   font-family: 'poppins';
-  
+
+
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -218,40 +240,3 @@
 
 
 
-/* CSS */
-.button-92 {
-  --c: #fff;
-  /* text color */
-  background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
-  /* background color */
-  color: #0000;
-  border: none;
-  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
-  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
-    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
-  outline-offset: .1em;
-  transition: 0.3s;
-
-
-}
-
-.button-92:hover,
-.button-92:focus-visible {
-  --_p: 0%;
-  --_i: 1;
-}
-
-.button-92:active {
-  text-shadow: none;
-  color: var(--c);
-  box-shadow: inset 0 0 9e9q #0005;
-  transition: 0s;
-}
-
-.button-92 {
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 0;
-  cursor: pointer;
-  padding: .1em .3em;
-}

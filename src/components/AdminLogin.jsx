@@ -26,7 +26,7 @@ let submit = () => {
         <form action=" " onSubmit={submit}> 
          <h1>Admin Login</h1>
 
-         <input  ref={AdminEmail} type="text" placeholder='Email' className='username' required/>
+         <input  ref={AdminEmail} type="email" placeholder='Email' className='username' required/>
          <input  ref={Adminpassword} type="text" placeholder='Password' required/>
 
 

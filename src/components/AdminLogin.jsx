@@ -10,7 +10,7 @@ const AdminLogin = () => {
 let navigate= useNavigate()
 
 let submit = () => {
-  if(AdminEmail.current.value === "ak@gmail.com" && Adminpassword.current.value === "123456"){
+  if(AdminEmail.current.value === "ak@gmail.com" && Adminpassword.current.value === "123"){
     navigate("/admin/home")
   }else{
     alert("Invalid Credentials")
@@ -27,7 +27,7 @@ let submit = () => {
          <h1>Admin Login</h1>
 
          <input  ref={AdminEmail} type="email" placeholder='Email' className='username' required/>
-         <input  ref={Adminpassword} type="text" placeholder='Password' required/>
+         <input  ref={Adminpassword} type="password" placeholder='Password' required/>
 
 
          <button>Login</button>

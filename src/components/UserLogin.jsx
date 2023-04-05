@@ -10,7 +10,7 @@ const UserLogin = () => {
  let navigate= useNavigate()
  
    const submit = () => {
-    if(userName.current.value === "user1" && userpassword.current.value === "123456"){
+    if(userName.current.value === "ak@gmail.com" && userpassword.current.value === "123"){
       navigate('/userportal')
     }else {
       alert("Invalid credentials")
@@ -24,8 +24,8 @@ const UserLogin = () => {
 
     <form action=" " onSubmit={submit}> 
      <h1>User-Login</h1>
-     <input ref={userName} type="text" placeholder='Email' className='username' required/>
-     <input ref={userpassword} type="text" placeholder='Password' required/>
+     <input ref={userName} type="email" placeholder='Email' className='username' required/>
+     <input ref={userpassword} type="password" placeholder='Password' required/>
 
      <button>Login</button>
     </form>

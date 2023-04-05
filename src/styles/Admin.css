@@ -16,10 +16,14 @@
     color: rgb(209, 203, 203);
     padding: 8px;
     cursor: pointer;
+   
 }
 
 .back:hover{
     background-color: rgb(245, 53, 53);
+   
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 form {
@@ -76,7 +80,8 @@ form button {
 form button:hover{
     width: 240px;
     background-color: rgb(215, 37, 37);
-    transition: 0.3s;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 form h1 {

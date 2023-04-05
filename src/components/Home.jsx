@@ -11,7 +11,6 @@ const Home = () => {
     <div className='Home'>
 
 
-
       <div className='Main'>
         <div className='books'>
           <img src="/images/sag.webp" alt="" width={350} />

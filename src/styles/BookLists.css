@@ -1,3 +1,106 @@
 .BookLists {
     font-family: "poppins";
+    /* background: url('../components/g.gif') no-repeat ; 
+    background-size: cover; */
+    width: 1500px;
+   padding: 10px 70px;
+    display: flex;
+    background-color: rgb(3, 85, 248);
+     background: linear-gradient(109.6deg, rgb(0, 64, 255) 11.2%, rgb(0, 49, 54) 91.1%); 
+    flex-wrap: wrap;
+    font-family: 'poppins';
+    font-weight: bold;
+    
+}
+
+.BookLists a {
+    text-decoration: none;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(29, 29, 29); */
+    width: 230px;
+    border-radius: 15px;
+    margin: 25px 12px;
+    padding:  8px;
+    background-color: rgb(3, 74, 156);;
+    height:470px;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 20px -3px, rgba(0, 0, 0, 0.315) 0px -20px 0px inset;  
+ 
+    }
+
+ .hidehover{
+    background-color: rgba(24, 16, 16, 0.782);
+    width: 200px;
+   
+    height:320px;
+    position: absolute;
+    left: 25px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+   visibility: hidden;
+    
+ }
+
+ .hidehover p {
+    background-color: rgb(195, 16, 255);
+    width: 100%;
+    
+ }
+
+
+ .book:hover .hidehover{
+   visibility: visible;
+}
+
+.book:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+
+}
+
+
+.stickerpara {
+    display: flex;
+    align-items: center;
+}
+
+.book img {
+    padding: 8px 8px 18px 8px;
+  background-color: aliceblue;
+  
+    margin: 0px 18px;
+    box-shadow: rgb(0, 0, 0) 0px 2px 8px, rgba(0, 0, 0, 0.542) 0px -17px 100px -40px, rgba(0, 0, 0, 0.567) 0px -10px 0px inset;    
+}
+
+.book img:hover {
+    transition: 0.9s;
+  
+}
+
+.Details {
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.author {
+    font-weight: 600;
+    color: rgb(180, 179, 179);
+
+}
+.booktitle {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.bookpagesyear p{
+ color: rgb(255, 255, 255);
+ font-weight: 500;
 }

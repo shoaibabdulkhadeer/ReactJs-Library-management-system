@@ -15,7 +15,7 @@ function App() {
          
         <Routes>
           <Route path='/' element={<Home />}/>   
-          <Route path='/admin' element={<AdminLogin />} />
+          <Route path='/adminlogin' element={<AdminLogin />} />
           <Route path='/userlogin' element={<UserLogin />} />     
           <Route path='/userPortal' element= {<UserDashboard />} />
           <Route path = '/admin/*' element={<Adminportal />} />

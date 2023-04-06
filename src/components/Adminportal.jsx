@@ -15,7 +15,7 @@ const Adminportal = () => {
    
       <AdminNavbar />
           <Routes>
-              <Route path='/home' element={<AdminHome />}/>
+              <Route path='/' element={<AdminHome />}/>
               <Route path='/user-list' element={<UserList />}/>
               <Route  path='/add-books' element={<AddBooks />}/>
               <Route path='/add-users' element={<AddUsers />} />

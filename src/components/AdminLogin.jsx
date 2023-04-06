@@ -11,7 +11,7 @@ let navigate= useNavigate()
 
 let submit = () => {
   if(AdminEmail.current.value === "ak@gmail.com" && Adminpassword.current.value === "123"){
-    navigate("/admin/home")
+    navigate("/admin/")
   }else{
     alert("Invalid Credentials")
   }

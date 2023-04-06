@@ -27,7 +27,7 @@ const Home = () => {
 
 
           <div className='links'>
-            <Link to="/admin"> <button className="button-85" > <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}><FaUserCircle size={25} style={{ marginBottom: "5px" }} /> Admin Login </div>  </button></Link>
+            <Link to="/adminlogin"> <button className="button-85" > <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}><FaUserCircle size={25} style={{ marginBottom: "5px" }} /> Admin Login </div>  </button></Link>
             <Link to="/userlogin"> <button className="button-85" ><div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}><FaUsers size={25} style={{ marginBottom: "5px" }} /> User Login </div></button>   </Link>
           </div>
 

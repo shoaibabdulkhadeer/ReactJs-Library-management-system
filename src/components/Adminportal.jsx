@@ -7,6 +7,7 @@ import '../styles/Adminportal.css'
 import AddBooks from '../components/AddBooks'
 import AddUsers from '../components/AddUsers'
 import BookLists from '../components/BookLists'
+import ReadBook from '../components/ReadBook'
 
 const Adminportal = () => {
   return (
@@ -19,7 +20,8 @@ const Adminportal = () => {
               <Route  path='/add-books' element={<AddBooks />}/>
               <Route path='/add-users' element={<AddUsers />} />
               <Route path='/book-Lists' element={<BookLists />} />
-
+              <Route path="/book-Lists/:id" element={<ReadBook />} /> 
+              
           </Routes>
 
         </div>

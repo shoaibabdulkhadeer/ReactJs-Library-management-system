@@ -10,7 +10,6 @@ const Home = () => {
   return (
     <div className='Home'>
 
-
       <div className='Main'>
         <div className='books'>
           <img src="/images/sag.webp" alt="" width={350} />
@@ -25,7 +24,6 @@ const Home = () => {
              <img src="/images/mario.webp" alt="" width={155} style={{ marginRight: "10px", borderRadius: "15px" }} /> 
              <h2>Signin As ...?  </h2>
           </div>
-
 
 
           <div className='links'>

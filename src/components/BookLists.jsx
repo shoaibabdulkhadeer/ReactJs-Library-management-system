@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/BookLists.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { RiVipCrownFill} from 'react-icons/ri';
 import { RiShieldUserFill } from 'react-icons/ri';
 
@@ -18,16 +18,16 @@ const BookLists = () => {
     fetchData()
   }, [books])
 
-  let navigate = useNavigate()
+  // let navigate = useNavigate()
 
-  const Del = (id) => {
+  const Del = (id,title) => {
  
-    alert("deleted")
+    alert( `Successfully deleted ${title} Book ` )
     fetch(`http://localhost:4000/books/${id}`,{
       method: 'DELETE'
     })
 
-    navigate('/admin/book-Lists') 
+    // navigate('/admin/book-Lists') 
 
   }
 
@@ -36,11 +36,15 @@ const BookLists = () => {
     <div className='BookLists'>
       {books.map((book) => {
         return (
-          <Link to={`/admin/book-Lists/${book.id}`}>
+          
           <div className='book'>
+                <Link to={`/admin/book-Lists/${book.id}`}>
             <div className='hidehover'>
+        
                 <p> <div className='stickerpara'> <RiVipCrownFill size={30} style={{margin:"5px"}}/>  View Book </div> </p>
+            
             </div>
+            </Link>
             <img src={book.imageLink} alt="" width={180} />
             <div className='Details'>
               
@@ -54,7 +58,7 @@ const BookLists = () => {
               </div>
            
               <div>
-              <button onClick={() => Del(book.id)} className='Delete'>Delete</button>
+              <button onClick={() => Del(book.id,book.title)} className='Delete'>Delete</button>
               </div>
 
             </div>
@@ -63,7 +67,7 @@ const BookLists = () => {
            
 
           </div>
-          </Link>
+      
         )
       })}
 

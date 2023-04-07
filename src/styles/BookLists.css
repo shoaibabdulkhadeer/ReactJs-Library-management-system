@@ -28,7 +28,7 @@
     background-color: rgb(3, 74, 156);;
     height:470px;
      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 20px -3px, rgba(0, 0, 0, 0.315) 0px -20px 0px inset;  
- 
+     overflow: hidden;
     }
 
  .hidehover{

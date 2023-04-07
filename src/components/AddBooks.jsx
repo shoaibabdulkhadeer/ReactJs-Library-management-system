@@ -1,22 +1,50 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../styles/Addbooks.css'
+import {useNavigate} from 'react-router-dom'
 
 const AddBooks = () => {
+
+ let title = useRef(null)
+ let author = useRef(null)
+ let Genre = useRef(null)
+ let imageLink = useRef(null)
+
+ let navigate = useNavigate()
+
+ let submit = (e) => {
+    e.preventDefault()
+     let data = {
+      title: title.current.value,
+      author: author.current.value,
+      Genre: Genre.current.value,
+      imageLink: imageLink.current.value,
+  
+     }
+     fetch("http://localhost:4000/books",{
+      method:'POST',
+      headers:{"Content-Type":'application/json'},
+      body:JSON.stringify(data)
+  })
+    alert('Success');
+    navigate("/admin/book-Lists")
+  }
+
+    
     return (
         <div className='addbooks'>
-            <form action=""  style={{marginLeft:"370px",marginTop:"20px"}}>
+            <form onSubmit={submit} action=""  style={{marginLeft:"370px",marginTop:"20px"}} >
                <h1>Add Books</h1>
                <label >Book Title</label>
-               <input type="text" placeholder='Enter Book Title'/>
+               <input ref={title} type="text" placeholder='Enter Book Title'/>
 
                 <label>Author Name</label>
-               <input type="text" placeholder='Author Name' />
+               <input ref={author} type="text" placeholder='Author Name' />
 
                <label > Genre </label>
-               <input type="text" placeholder='Genre' />
+               <input ref={Genre} type="text" placeholder='Genre' />
 
                <label> ThumbNail URL</label>
-               <input type="text" placeholder='Thumbnail URL' />
+               <input ref={imageLink} type="text" placeholder='Thumbnail URL' />
 
                <button>Add Book</button>
  

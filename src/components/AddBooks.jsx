@@ -8,6 +8,11 @@ const AddBooks = () => {
  let author = useRef(null)
  let Genre = useRef(null)
  let imageLink = useRef(null)
+ let pages = useRef(null)
+ let year = useRef(null)
+ let country = useRef(null)
+ let language = useRef(null)
+
 
  let navigate = useNavigate()
 
@@ -18,7 +23,11 @@ const AddBooks = () => {
       author: author.current.value,
       Genre: Genre.current.value,
       imageLink: imageLink.current.value,
-  
+      pages: pages.current.value,
+      year: year.current.value,
+      country: country.current.value,
+      language: language.current.value,
+
      }
      fetch("http://localhost:4000/books",{
       method:'POST',
@@ -46,6 +55,23 @@ const AddBooks = () => {
                <label> ThumbNail URL</label>
                <input ref={imageLink} type="text" placeholder='Thumbnail URL' />
 
+               <label > Pages </label>
+               <input ref={pages} type="text" placeholder='Pages' />
+
+               
+               <label > Year </label>
+               <input ref={year} type="text" placeholder='Year' />
+
+               <label > Country </label>
+               <input ref={country} type="text" placeholder='Country' />
+
+               <label > Language </label>
+               <input ref={language} type="text" placeholder='Language' />
+               
+               {/* <label > Description </label>
+               <input ref={description} type="text" placeholder='Description' /> */}
+
+        
                <button>Add Book</button>
  
             </form>

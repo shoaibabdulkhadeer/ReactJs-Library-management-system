@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/BookLists.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { RiVipCrownFill} from 'react-icons/ri';
 import { RiShieldUserFill } from 'react-icons/ri';
 
@@ -16,7 +16,20 @@ const BookLists = () => {
       setBooks(data)
     }
     fetchData()
-  }, [])
+  }, [books])
+
+  let navigate = useNavigate()
+
+  const Del = (id) => {
+ 
+    alert("deleted")
+    fetch(`http://localhost:4000/books/${id}`,{
+      method: 'DELETE'
+    })
+
+    navigate('/admin/book-Lists') 
+
+  }
 
 
   return (
@@ -34,10 +47,18 @@ const BookLists = () => {
             <h3 className='booktitle' style={{display:"flex",alignItems:"center",gap:"5px"}}><RiShieldUserFill /> {book.title}</h3>
             <p className='author'>{book.author}</p>
             <div className='bookpagesyear'>
-            <p>Pages - {book.pages}</p>
+              <div>
+              <p>Pages - {book.pages}</p>
               <p> Year - {book.year}</p>
-              
+
+              </div>
+           
+              <div>
+              <button onClick={() => Del(book.id)} className='Delete'>Delete</button>
+              </div>
+
             </div>
+           
             </div>
            
 

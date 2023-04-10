@@ -11,7 +11,7 @@ const UserLogin = () => {
  
    const submit = () => {
     if(userName.current.value === "ak@gmail.com" && userpassword.current.value === "123"){
-      navigate('/userportal')
+      navigate('/user')
     }else {
       alert("Invalid credentials")
     }

@@ -25,10 +25,16 @@
     border-radius: 15px;
     margin: 25px 12px;
     padding:  8px;
-    background-color: rgb(3, 74, 156);;
-    height:470px;
+    background-color: rgb(3, 74, 156);
+    height:510px;
      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 20px -3px, rgba(0, 0, 0, 0.315) 0px -20px 0px inset;  
      overflow: hidden;
+    }
+
+    .readmorebtn {
+        cursor: pointer;
+        margin-bottom: 14px;
+        font-weight: bold;
     }
 
  .hidehover{
@@ -38,6 +44,7 @@
     height:320px;
     position: absolute;
     left: 25px;
+    top: 40px;
     text-align: center;
     color: white;
     display: flex;
@@ -48,9 +55,11 @@
     
  }
 
- .hidehover p {
+ .hidehover p{
     background-color: rgb(195, 16, 255);
     width: 100%;
+    display: flex;
+    align-items: center;
     
  }
 

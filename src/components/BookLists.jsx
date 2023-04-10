@@ -1,14 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/BookLists.css'
-import { Link} from 'react-router-dom'
+import {  useNavigate} from 'react-router-dom'
 import { RiVipCrownFill} from 'react-icons/ri';
 import { RiShieldUserFill } from 'react-icons/ri';
+// import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useLocation } from 'react-router-dom';
 
 
 const BookLists = () => {
 
+  let location = useLocation()
+  console.log(location.pathname)
+
+  let navigate = useNavigate()
+
   const [books, setBooks] = useState([])
 
+  
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("http://localhost:4000/books")
@@ -16,7 +25,11 @@ const BookLists = () => {
       setBooks(data)
     }
     fetchData()
+
+
   }, [books])
+
+
 
   // let navigate = useNavigate()
 
@@ -26,25 +39,43 @@ const BookLists = () => {
     fetch(`http://localhost:4000/books/${id}`,{
       method: 'DELETE'
     })
+  }
 
-    // navigate('/admin/book-Lists') 
-
+  
+  const readbookbtn = (id) => {
+    if(location.pathname === '/admin/book-Lists'){
+      navigate(`/admin/book-Lists/${id}`)
+    }else{
+         navigate(`/user/book-Lists/${id}`)
+    }
   }
 
 
   return (
     <div className='BookLists'>
+ 
+           {/* alert component */}
+           {/* <ToastContainer limit={1} style={{width:"350px"}} /> */}
+
       {books.map((book) => {
         return (
           
-          <div className='book'>
-                <Link to={`/admin/book-Lists/${book.id}`}>
-            <div className='hidehover'>
-        
-                <p> <div className='stickerpara'> <RiVipCrownFill size={30} style={{margin:"5px"}}/>  View Book </div> </p>
-            
+          <div className='book' key={book.id}>
+
+
+
+            <div className='hidehover'>            
+                  <div className='stickerpara'> 
+                  <p>
+                  <RiVipCrownFill size={30} style={{margin:"5px"}}/>  View Book 
+                    </p> 
+                  </div>
             </div>
-            </Link>
+            
+            <button onClick={() => readbookbtn(book.id)} className='readmorebtn'>
+                 Read more
+           </button>
+        
             <img src={book.imageLink} alt="" width={180} />
             <div className='Details'>
               
@@ -56,9 +87,11 @@ const BookLists = () => {
               <p> Year - {book.year}</p>
 
               </div>
+
+              
            
               <div>
-              <button onClick={() => Del(book.id,book.title)} className='Delete'>Delete</button>
+            {location.pathname === '/admin/book-Lists' &&  <button onClick={() => Del(book.id,book.title)} className='Delete'>Delete</button>}
               </div>
 
             </div>

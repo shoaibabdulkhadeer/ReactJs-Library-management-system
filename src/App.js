@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from './components/Home';
 import AdminLogin from './components/AdminLogin';
 import UserLogin from './components/UserLogin';
@@ -11,18 +11,17 @@ import UserDashboard from './components/UserDashboard';
 function App() {
   return (
     <div className="App">
-       <BrowserRouter >
-         
+      <BrowserRouter >
+      
         <Routes>
-          <Route path='/' element={<Home />}/>   
+          <Route path='/' element={<Home />} />
           <Route path='/adminlogin' element={<AdminLogin />} />
-          <Route path='/userlogin' element={<UserLogin />} />     
-          <Route path='/userPortal' element= {<UserDashboard />} />
-          <Route path = '/admin/*' element={<Adminportal />} />
-
+          <Route path='/userlogin' element={<UserLogin />} />
+          <Route path='/admin/*' element={<Adminportal />} />
+          <Route path='/user/*' element={<UserDashboard />} />
         </Routes>
 
-       </BrowserRouter>  
+      </BrowserRouter>
     </div>
   );
 }

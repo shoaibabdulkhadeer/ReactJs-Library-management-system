@@ -1,4 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 .Adminhome {
+   
+       width: 1320px;
+       overflow: hidden;
+    
 
+}
+
+.firstSection {
+       padding: 135px 15px;   
        width: 1350px;
+       background: url("https://www.greenwichlibrary.org/wp-content/uploads/2022/09/Books.jpg") no-repeat;
+      display:flex;
+      
+      align-items: center;
+}
+
+.smallCard {
+       background-color: rgba(255, 255, 255, 0.883);
+       width: 900px;
+       height: 200px;
+       padding: 45px;
+       font-family: 'EB Garamond', serif;
+       margin-bottom: 100px;
+       position: relative;
+}
+
+.smallCard h1 {
+       font-family: 'EB Garamond', serif;
+       font-size: 60px;
+       color: rgb(61, 61, 61);   
+       margin-bottom: 10px;
+}
+
+.greenline{
+       height: 2px;
+       width: 600px;
+      background-color: rgb(0, 152, 0);
+}
+
+.smallCard p{
+     font-size: 20px;
+     line-height: 35px;
+     color: rgb(77, 77, 77);
+     margin-top: 10px;
+}
+
+.register{
+       background-color: rgb(42, 136, 86);
+       color: white;
+       border: none;
+       padding: 8px;
+       position: absolute;
+       bottom: 0px;
+       right: 0px;
+       width: 180px;
+       height: 40px;
+       font-weight: bolder;
+}
+
+.register:hover{
+       background-color: rgb(105, 188, 105);
+       cursor: pointer;
+}
+
+.second-section{
+       margin: 0px;
+       height: 600px;
+       display: flex;
+       justify-content: center;
+       position: relative;
+}
+
+.second-section img {
+       width: 1100px;
+       height: 400px;
+}
+
+.resumeCard{
+       position: absolute;
+       width: 800px;
+     background-color: white;
+      padding: 35px;
+      bottom: 50px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.resumeCard h1{
+       font-size: 60px;
+       font-weight: 200;
+       color: rgb(55, 55, 55);
+       font-family: 'EB Garamond', serif;
+
+}
+
+.resumeCard p {
+       padding: 15px 0px;
+       font-size: 20px;
+
+}
+
+
+.redline {
+       height: 2px;
+       width: 600px;
+      background-color: rgb(178, 21, 0);
+}
+.appoinmentBTN {
+       color: white;
+       background-color: rgb(251, 42, 42);
+       border: none;
+       padding: 8px;
+       position: absolute;
+       bottom: 0px;
+       right: 0px;
+       width: 180px;
+       height: 40px;
+       font-weight: bolder;
+}
+
+.appoinmentBTN:hover{
+       background-color: rgb(250, 70, 70);
+       cursor: pointer;
+}
+
+.thirdsection{
+       background: url("https://www.greenwichlibrary.org/wp-content/uploads/2016/04/Pattern-BG-Main.svg") ;
+       
+       padding: 30px;
+       height: 400px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+
+}
+
+
+.eventsdetails{
+       width: 900px;
+       text-align: center;
+       color: white;
+       font-weight: 500;
+       font-size: 20px;
+       background-color: #019875;
+       padding: 55px;
+       border-radius: 15px;
+}
+.eventsdetails h1 {
+       font-family: "Garamond";
+       font-weight: bold;
+      font-size: 50px;
+} 
+
+.printBTN {
+       color: rgb(98, 98, 98);
+       background-color: rgb(255, 255, 255);
+       border: none;
+       padding: 8px;
+        margin-top: 10px;
+        width: 250px;
+       font-weight: bolder;
+}
+
+.printBTN:hover{
+       background-color: rgb(205, 205, 205);
+       cursor: pointer;
+}
+
+.FourthSection {
+       height: 600px;
+       padding: 55px 15px;
+       display: flex;
+       flex-wrap: wrap;
+}
+
+.cards4{
+      width: 505px;
+   
+      padding: 15px 30px;
+      margin: 8px 25px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cards4 h1{
+ font-size: 50px;
+       font-weight: 200;
+       color: rgb(55, 55, 55);
+       font-family: 'EB Garamond', serif;
+}
+
+.greenline1{
+       height: 2px;
+       width: 480px;
+      background-color: rgb(0, 152, 0);
+      margin: 8px 0px;
+}
+
+.cards4 p {
+       margin: 20px 0px;
+       font-size: 18px;
+}
+
+.cards4 a {
+       color:#019875;
+       font-size: 18px;
+}
+
+ .FifthSection {
+       padding: 15px;
+    
+ }
+
+ .bigCard {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+     padding: 35px; 
+     width: 1040px;
+     margin-left: 60px;
+     position: relative;
+}
+
+
+.bookrow {
+       padding: 25px;
+}
+
+
+.bookrow img {
+       margin:0px 45px ;
+}
+
+.sixthSection {
+       display: flex;
+       color: white;
+       background-color: #019875;
+     height: 250px;
+     margin: 45px 0px;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+}
+
+.authorname{
+       padding:0px 20px ;
+       margin: 0px 10px;
+}
+
+.cursive {
+       padding: 5px 25px;
+       width: 900px;
+       font-family: 'Satisfy', cursive;
+       font-weight: 400;
+}
+
+.seventhSection {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 350px;
+}
+
+.signcard1 {
+       text-align: center;
+       background-color: #34c7a5;
+       height: 350px;
+       width: 650px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+
+
+.signcard2 {
+       text-align: center;
+       background-color: #019875;
+       height: 350px;
+       width: 650px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+
+.signpara {
+       width: 440px;
+       color: white;
+       font-size: 22px;
+}
+
+.signhead{
+       color: white;
+       margin: 15px 0px;
+       font-size: 30px;
+}
+
+.printBTN1 {
+       color: rgb(98, 98, 98);
+       background-color: rgb(255, 255, 255);
+       border: none;
+       padding: 8px;
+        margin-top: 10px;
+        width: 150px;
+       font-weight: bolder;
+}
+
+.printBTN1:hover{
+       background-color: rgb(205, 205, 205);
+       cursor: pointer;
 }
